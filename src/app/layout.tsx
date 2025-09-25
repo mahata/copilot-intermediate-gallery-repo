@@ -49,7 +49,22 @@ export default function RootLayout({
           </div>
         </header>
         {children}
-        {/* REPLACE THIS COMMENT */}
+        {/* Footer */}
+        <footer className="border-t bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm mt-16">
+          <div className="container mx-auto px-4 py-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-2">
+                <Camera className="h-6 w-6 text-blue-600" />
+                <span className="text-lg font-semibold text-slate-900 dark:text-white">
+                  Portfolio Gallery
+                </span>
+              </div>
+              <div className="text-sm text-slate-600 dark:text-slate-400 text-center md:text-right">
+                <p>&copy; {new Date().getFullYear()} Portfolio Gallery. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
